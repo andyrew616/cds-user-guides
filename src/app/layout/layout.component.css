@@ -1,0 +1,40 @@
+.sidenav-container {
+  height: 100vh; /* Ensure it takes the full viewport height */
+  overflow: hidden; /* Prevent scrolling in the sidenav container */
+}
+
+.sidenav {
+  width: 260px;
+  height: 100%; /* Ensure the sidebar takes full height */
+  overflow-x: none;
+}
+
+.mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #3f51b5; /* Set the background colour */
+  color: white; /* Set the text colour */
+}
+.mat-form-field {
+  width: 90%; /* Ensure the form field takes the full width of its container */
+}
+.search-container{
+  padding: 0px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  width: 90%;
+}
+.mat-nav-list {
+  padding-bottom: 16px; /* Add some padding at the bottom */
+}
+
+.mat-sidenav-content {
+  height: 100vh; /* Ensure it takes the full viewport height */
+  overflow-y: auto; /* Enable scrolling for the entire content */
+  width:90%;
+}
+
+.content {
+  padding: 20px;
+}

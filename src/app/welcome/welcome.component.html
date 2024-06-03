@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Welcome to Energy Clickthrough</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Welcome to the Energy Clickthrough guide. This guide will help you navigate through the process of handling referrals and booking first appointments.</p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card *ngFor="let guide of guides$ | async" class="guide-card">
+  <mat-card-title>{{ guide.title }}</mat-card-title>
+  <mat-card-content>
+    <p>{{ guide.content }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button [routerLink]="['/guide', guide.id]">Read More</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "title": "Getting Started",
+    "content": "Welcome to the Getting Started guide!",
+    "sections": [
+      { "id": "1.1", "title": "Introduction", "content": "This is the introduction.", "guideId": "1" },
+      { "id": "1.2", "title": "Setup", "content": "This is the setup section.", "guideId": "1" },
+      { "id": "1.3", "title": "Usage", "content": "This is the usage section.", "guideId": "1" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Advanced Topics",
+    "content": "Welcome to the Advanced Topics guide!",
+    "sections": [
+      { "id": "2.1", "title": "Performance", "content": "This is the performance section.", "guideId": "2" },
+      { "id": "2.2", "title": "Security", "content": "This is the security section.", "guideId": "2" }
+    ]
+  }
+]

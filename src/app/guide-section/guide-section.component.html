@@ -1,0 +1,10 @@
+<h2>{{ (guide$ | async)?.title }}</h2>
+
+<mat-card *ngIf="section.title">
+  <mat-card-header>
+    <mat-card-title>{{ section.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ section.content }}</p>
+  </mat-card-content>
+</mat-card>

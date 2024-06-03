@@ -1,0 +1,10 @@
+.section-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  mat-card {
+    margin-top: 16px;
+  }
+  

@@ -1,0 +1,29 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <mat-toolbar>CDS User Guide</mat-toolbar>
+    <div class="sidenav-content">
+      <div class="search-container">
+        <mat-form-field appearance="outline">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput placeholder="Search..." [formControl]="searchControl">
+        </mat-form-field>
+      </div>
+      <mat-nav-list>
+        <a *ngFor="let guide of (guides$ | async) || []" mat-list-item [routerLink]="['/guide', guide.id]">
+          {{ guide.title }}
+        </a>
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content class="mat-sidenav-content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>CDS User Guide</span>
+    </mat-toolbar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

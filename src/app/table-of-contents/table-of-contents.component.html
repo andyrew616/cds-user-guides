@@ -1,0 +1,6 @@
+<h2>{{ guide?.title }}</h2>
+<ul>
+  <li *ngFor="let section of guide?.sections">
+    <a [routerLink]="['/guide', guide?.id, 'section', section.id]">{{ section.title }}</a>
+  </li>
+</ul>
